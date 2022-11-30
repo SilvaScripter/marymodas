@@ -4,64 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mary Modas</title>
 </head>
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="#" class="logo">Mary Modas</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="">Produtos</a></li>
-                <li class="nav-item"><a href="">Sobre</a></li>
-                <li class="nav-item"><a href="">Contatos</a></li>
-                <i class='bx bx-search'></i>
-            </ul>
-            <div class="menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="home">
-            <div class="home-img">
-                <img src="source/banner.png" alt="">
-            </div>
+    <nav>
+        <div class="logo"> Mary Modas </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
         </div>
-        <div class="ofertas">
-            <h1 class="h1-prom">Ofertas</h1>
-            <br>
-            <div class="produto-class">
-                <div class="produto1">
-                    <img class="imgprom" src="source/conjunto1.jpeg" alt="" width="330px" height="400px">
-                    <h2>Trijunto Paetê</h2>
-                    <p class="preco-original"><s>De R$150</s></p>
-                    <p class="preco-atual">Por R$110</p>
-                </div>
-                <div class="produto2">
-                    <img class="imgprom" src="source/conjunto2.jpeg" alt="" width="330px" height="400px">
-                    <h2>Macaquinho Emily</h2>
-                    <p class="preco-original"><s>De R$135</s></p>
-                    <p class="preco-atual">Por R$110</p>
-                </div>
-                <div class="produto3">
-                    <img class="imgprom" src="source/conjunto3.jpeg" alt="" width="330px" height="400px">
-                    <h2>Vestido Shirley</h2>
-                    <p class="preco-original"><s>De R$120</s></p>
-                    <p class="preco-atual">Por R$90</p>
-                </div>
+
+        <ul>
+            <li> <a href="#" class="active"> Inicio </a> </li>
+            <li> <a href="#"> Produtos</a> </li>
+            <li> <a href="#"> Contato</a> </li>
+            <li><a id="btn-entrar" href="#"> Entrar</a></li>
+        </ul>
+    </nav>
+    <script src="main.js"></script>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Femininas</a></li>
+            <li><a href="#">Masculina</a></li>
+            <li><a href="#">Infantil</a></li>
+            <li><a href="#">Acessorios</a></li>
+        </ul>
+    </nav>
+    <div class="banners">
+        <div><img class="imgbanner" src="source/banner.png" alt="" width="100%"></div>
+        <div><img class="imgbanner2" src="source/banner2.PNG" alt="" width="100%"></div>
+    </div>
+    <div class="conteudo">
+        <h1>Produtos em Destaque</h1>
+        <hr>
+        <br>
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card card-1">
+              <div class="card-header">
+                <img src="source/produto1.jpeg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-local">Carteira Feminina</h3>
+                <h2 class="card-titulo">R$ 90,00</h2>
+                <p class="card-texto">
+                  Carteira de couro estampada
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Comprar</a>
+              </div>
             </div>
-        </div>
-    </main>
-    <br><br><br>
+            <!-- Card 1 Fim-->
+      
+            <!-- Card 2 -->
+            <div class="card card-2">
+              <div class="card-header">
+                <img src="source/produto2.jpeg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-local">Cinto Feminino</h3>
+                <h2 class="card-titulo">R$ 60,00</h2>
+                <p class="card-texto">
+                  Cinto de couro detalhado
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <!-- Card 2Fim -->
+      
+            <!-- Card 3 -->
+            <div class="card card-3">
+              <div class="card-header">
+                <img src="source/produto3.jpeg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h3 class="card-local">Bolsa Feminina</h3>
+                <h2 class="card-titulo">R$ 120,00</h2>
+                <p class="card-texto">
+                    Bolsa de couro feminina.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <!-- Card 3 Fim -->
+          </div>
+    </div>
+    <!-- footer col-->
     <footer>
         <div class="container-footer">
             <div class="row-footer">
-                <!-- footer col-->
                 <div class="footer-col">
                     <h4>Suporte</h4>
                     <ul>
@@ -85,13 +122,13 @@
                     <div class="medias-socias">
                         <a href="#"> <img src="source/facebook.png" alt="" width="30px" height="30px"> </a>
                         <a href="#"> <img src="source/instagram.png" alt="" width="30px" height="30px"></a>
-                        <a href="#"> <img src="source/whatsapp.png" alt="" width="30px" height="30px"></a>
+                        <a href="https://wa.me/+5511959488667"> <img src="source/whatsapp.png" alt="" width="30px" height="30px"></a>
                     </div>
         
                 </div>
-                <!--end footer col-->
             </div>
         </div>
-        </footer>
+    </footer>
+    <!--end footer col-->
 </body>
 </html>
